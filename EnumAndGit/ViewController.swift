@@ -24,7 +24,23 @@ class ViewController: UIViewController {
     }
     
     func func1(gender : Gender){
-        
+        switch gender {
+        case .both:
+            print("both")
+        default:
+            print("single gender")
+        }
+    }
+    
+    func func2(gender: Gender){
+        switch gender {
+        case .male:
+            print("M")
+        case .female:
+            print("F")
+        case .both:
+            print("B")
+        }
     }
 
 
